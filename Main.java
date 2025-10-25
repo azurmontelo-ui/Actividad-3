@@ -1,13 +1,16 @@
-// Clase principal que ejecuta el programa
 public class Main {
     public static void main(String[] args) {
-        // Crear objetos de la clase Estudiante
+        // Crear un estudiante normal
         Estudiante estudiante1 = new Estudiante("Ana", 20);
-        Estudiante estudiante2 = new Estudiante("Luis", 22);
 
-        // Mostrar la información de los estudiantes
+        // Crear un estudiante becado (subclase)
+        EstudianteBecado estudiante2 = new EstudianteBecado("Luis", 22, 1500.0);
+
+        System.out.println("=== Información del Estudiante ===");
         estudiante1.mostrarInfo();
-        System.out.println("------");
+
+        System.out.println("\n=== Información del Estudiante Becado ===");
         estudiante2.mostrarInfo();
     }
 }
+
